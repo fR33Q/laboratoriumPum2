@@ -1,18 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_bright"
+    android:orientation="vertical"
+    android:gravity="center"
     tools:context="com.example.damian.myapplication.MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Zabrze"
+        android:textSize="20sp"
+        android:id="@+id/miasto"
+        android:textColor="@android:color/white"/>
 
-</android.support.constraint.ConstraintLayout>
+
+
+    <ImageView
+        android:layout_width="176dp"
+        android:layout_height="123dp"
+        android:src="@drawable/ic_wb_sunny_black_24dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:text="30 stopni celcjusza"
+        android:textColor="@android:color/white"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pamiętaj o filtrze"
+        android:textColor="@android:color/white"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Podaj miejsce"
+        android:textColor="@android:color/white"
+        />
+
+    <EditText
+        android:layout_width="363dp"
+        android:layout_height="46dp"
+        android:orientation="vertical"
+        android:id="@+id/podaj_nazwe"
+         />
+
+    <Button
+        android:layout_width="233dp"
+        android:layout_height="64dp"
+        android:text="ZMIEń MIejsce"
+        android:id="@+id/przycisk_zmiana"
+        android:textColor="@android:color/holo_blue_light"
+        android:onClick="click_zmiana_miejsca"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:text="POKAż LISTę DOSTEPNYCH MIEJSC"
+        android:textColor="@android:color/holo_blue_light"/>
+
+</LinearLayout>
